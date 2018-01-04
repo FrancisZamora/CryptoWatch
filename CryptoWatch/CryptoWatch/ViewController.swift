@@ -14,10 +14,18 @@ class ViewController: UIViewController {
     var cryptos = ["Bitcoin","Ripple","Cardano","Tron","Litecoin", "Stellar"]
 
     override func viewDidLoad() {
-        self.fetchCoins()
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.fetchCoins()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.CryptoCurrencies = []
+        
     }
 
     override func didReceiveMemoryWarning() {
