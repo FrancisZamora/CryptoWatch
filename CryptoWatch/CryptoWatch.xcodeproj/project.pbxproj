@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		156DC5C01FFDCCAA00EC2534 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156DC5BF1FFDCCAA00EC2534 /* APIClient.swift */; };
 		156DC5C21FFDCCD700EC2534 /* Cryptocurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156DC5C11FFDCCD700EC2534 /* Cryptocurrency.swift */; };
+		156DC5C41FFDDB2500EC2534 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156DC5C31FFDDB2500EC2534 /* Coin.swift */; };
+		156DC5C61FFDDCCE00EC2534 /* Coins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156DC5C51FFDDCCE00EC2534 /* Coins.swift */; };
 		158808CE1FFDCA6C006A15F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158808CD1FFDCA6C006A15F3 /* AppDelegate.swift */; };
 		158808D01FFDCA6C006A15F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158808CF1FFDCA6C006A15F3 /* ViewController.swift */; };
 		158808D31FFDCA6C006A15F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158808D11FFDCA6C006A15F3 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		156DC5BF1FFDCCAA00EC2534 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = /Users/Francis/Desktop/CryptoWatch/CryptoWatch/CryptoWatch/CryptoWatch/APIClient.swift; sourceTree = "<absolute>"; };
 		156DC5C11FFDCCD700EC2534 /* Cryptocurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptocurrency.swift; sourceTree = "<group>"; };
+		156DC5C31FFDDB2500EC2534 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		156DC5C51FFDDCCE00EC2534 /* Coins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins.swift; sourceTree = "<group>"; };
 		158808CA1FFDCA6C006A15F3 /* CryptoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		158808CD1FFDCA6C006A15F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		158808CF1FFDCA6C006A15F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,9 +137,11 @@
 			children = (
 				158808CD1FFDCA6C006A15F3 /* AppDelegate.swift */,
 				158808CF1FFDCA6C006A15F3 /* ViewController.swift */,
+				156DC5C51FFDDCCE00EC2534 /* Coins.swift */,
 				156DC5BF1FFDCCAA00EC2534 /* APIClient.swift */,
 				156DC5C11FFDCCD700EC2534 /* Cryptocurrency.swift */,
 				158808D11FFDCA6C006A15F3 /* Main.storyboard */,
+				156DC5C31FFDDB2500EC2534 /* Coin.swift */,
 				158808D41FFDCA6C006A15F3 /* Assets.xcassets */,
 				158808D61FFDCA6C006A15F3 /* LaunchScreen.storyboard */,
 				158808D91FFDCA6C006A15F3 /* Info.plist */,
@@ -468,7 +474,9 @@
 			files = (
 				158808D01FFDCA6C006A15F3 /* ViewController.swift in Sources */,
 				158808CE1FFDCA6C006A15F3 /* AppDelegate.swift in Sources */,
+				156DC5C61FFDDCCE00EC2534 /* Coins.swift in Sources */,
 				156DC5C01FFDCCAA00EC2534 /* APIClient.swift in Sources */,
+				156DC5C41FFDDB2500EC2534 /* Coin.swift in Sources */,
 				156DC5C21FFDCCD700EC2534 /* Cryptocurrency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
