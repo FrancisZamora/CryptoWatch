@@ -13,7 +13,7 @@
         <!--Cryptfolio-->
         <scene sceneID="tzZ-Xs-FFG">
             <objects>
-                <collectionViewController storyboardIdentifier="Coins" id="e4k-8f-jfa" customClass="Coins" customModule="CryptoWatch" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="Coins" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e4k-8f-jfa" customClass="Coins" customModule="CryptoWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="rcg-yZ-KEA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,48 +32,54 @@
                                     <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ph2-N0-6NE">
-                                            <rect key="frame" x="61" y="20" width="60" height="60"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ph2-N0-6NE">
+                                            <rect key="frame" x="20" y="20" width="10" height="10"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.5%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gP7-ey-sZY">
-                                            <rect key="frame" x="20" y="147" width="37" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="20" y="147" width="39" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.3%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxd-pB-5If">
-                                            <rect key="frame" x="124" y="146" width="38" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="126" y="146" width="39" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1203.45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wd-SK-nvX">
-                                            <rect key="frame" x="55" y="123" width="73" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1500.23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNo-e9-rWD">
+                                            <rect key="frame" x="39" y="7" width="87" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1.30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNo-e9-rWD">
-                                            <rect key="frame" x="70" y="91" width="43" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$3500" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wd-SK-nvX">
+                                            <rect key="frame" x="52" y="75" width="79" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="itq-Zy-TQh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                             <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="oxd-pB-5If" firstAttribute="top" secondItem="NNo-e9-rWD" secondAttribute="bottom" constant="34" id="2vr-33-22c"/>
+                                    <constraint firstItem="NNo-e9-rWD" firstAttribute="top" secondItem="gFq-mg-exJ" secondAttribute="topMargin" constant="-1" id="4RZ-G1-tmf"/>
                                     <constraint firstItem="gP7-ey-sZY" firstAttribute="leading" secondItem="gFq-mg-exJ" secondAttribute="leadingMargin" constant="12" id="9Uq-zC-Ccv"/>
-                                    <constraint firstItem="Ph2-N0-6NE" firstAttribute="centerX" secondItem="gFq-mg-exJ" secondAttribute="centerX" id="FJU-IJ-OWP"/>
-                                    <constraint firstItem="NNo-e9-rWD" firstAttribute="top" secondItem="Ph2-N0-6NE" secondAttribute="bottom" constant="11" id="HuG-oo-YDT"/>
+                                    <constraint firstItem="NNo-e9-rWD" firstAttribute="centerY" secondItem="Ph2-N0-6NE" secondAttribute="centerY" id="FJO-uL-Ffo"/>
+                                    <constraint firstItem="Ph2-N0-6NE" firstAttribute="centerX" secondItem="gFq-mg-exJ" secondAttribute="centerX" constant="-66" id="FJU-IJ-OWP"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="NNo-e9-rWD" secondAttribute="trailing" constant="48" id="IZ8-J8-QGZ"/>
+                                    <constraint firstItem="3wd-SK-nvX" firstAttribute="top" secondItem="NNo-e9-rWD" secondAttribute="bottom" constant="32" id="Qib-8o-n2L"/>
                                     <constraint firstItem="oxd-pB-5If" firstAttribute="leading" secondItem="gP7-ey-sZY" secondAttribute="trailing" constant="67" id="R7n-N4-4Q4"/>
-                                    <constraint firstItem="NNo-e9-rWD" firstAttribute="centerX" secondItem="3wd-SK-nvX" secondAttribute="centerX" id="TfZ-Tz-rjV"/>
-                                    <constraint firstItem="3wd-SK-nvX" firstAttribute="top" secondItem="NNo-e9-rWD" secondAttribute="bottom" constant="11" id="WU4-oa-x11"/>
+                                    <constraint firstItem="3wd-SK-nvX" firstAttribute="centerX" secondItem="gFq-mg-exJ" secondAttribute="centerX" id="UgT-OI-ZIo"/>
                                     <constraint firstItem="Ph2-N0-6NE" firstAttribute="top" secondItem="gFq-mg-exJ" secondAttribute="topMargin" constant="12" id="XeC-aa-ewe"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="oxd-pB-5If" secondAttribute="bottom" constant="7" id="g7V-Pb-iaF"/>
+                                    <constraint firstItem="NNo-e9-rWD" firstAttribute="leading" secondItem="gFq-mg-exJ" secondAttribute="leading" constant="39" id="jWl-Pa-InY"/>
+                                    <constraint firstItem="NNo-e9-rWD" firstAttribute="leading" secondItem="Ph2-N0-6NE" secondAttribute="trailing" constant="9" id="q24-3p-p9Z"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="gP7-ey-sZY" secondAttribute="bottom" constant="6" id="rmU-W8-jeC"/>
-                                    <constraint firstItem="Ph2-N0-6NE" firstAttribute="centerX" secondItem="NNo-e9-rWD" secondAttribute="centerX" id="tzw-ut-VlG"/>
-                                    <constraint firstItem="Ph2-N0-6NE" firstAttribute="leading" secondItem="gFq-mg-exJ" secondAttribute="leadingMargin" constant="53" id="xPh-vP-Z9u"/>
+                                    <constraint firstItem="Ph2-N0-6NE" firstAttribute="leading" secondItem="gFq-mg-exJ" secondAttribute="leadingMargin" constant="12" id="xPh-vP-Z9u"/>
+                                    <constraint firstAttribute="bottom" secondItem="3wd-SK-nvX" secondAttribute="bottom" constant="77" id="y3k-Ih-hJb"/>
                                 </constraints>
                                 <size key="customSize" width="182" height="182"/>
                                 <connections>
@@ -136,6 +142,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Cryptfolio" id="L3X-ks-uEN"/>
+                    <connections>
+                        <outlet property="flow" destination="W6Y-4V-Vlt" id="1Xz-U9-trm"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qIG-G4-c37" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

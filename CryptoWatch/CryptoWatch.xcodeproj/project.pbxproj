@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151E8BAD1FFDE95F004FEF2C /* BTC.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BAC1FFDE95F004FEF2C /* BTC.png */; };
+		151E8BAF1FFDEE41004FEF2C /* tron.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BAE1FFDEE41004FEF2C /* tron.png */; };
+		151E8BB11FFDEE4A004FEF2C /* Stellar.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BB01FFDEE49004FEF2C /* Stellar.png */; };
+		151E8BB31FFDEE55004FEF2C /* ripple.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BB21FFDEE55004FEF2C /* ripple.png */; };
+		151E8BB51FFDEE60004FEF2C /* cardano.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BB41FFDEE60004FEF2C /* cardano.png */; };
+		151E8BB71FFDEE64004FEF2C /* LTC.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BB61FFDEE63004FEF2C /* LTC.png */; };
 		156DC5C01FFDCCAA00EC2534 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156DC5BF1FFDCCAA00EC2534 /* APIClient.swift */; };
 		156DC5C21FFDCCD700EC2534 /* Cryptocurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156DC5C11FFDCCD700EC2534 /* Cryptocurrency.swift */; };
 		156DC5C41FFDDB2500EC2534 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156DC5C31FFDDB2500EC2534 /* Coin.swift */; };
 		156DC5C61FFDDCCE00EC2534 /* Coins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156DC5C51FFDDCCE00EC2534 /* Coins.swift */; };
 		158808CE1FFDCA6C006A15F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158808CD1FFDCA6C006A15F3 /* AppDelegate.swift */; };
-		158808D01FFDCA6C006A15F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158808CF1FFDCA6C006A15F3 /* ViewController.swift */; };
 		158808D31FFDCA6C006A15F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158808D11FFDCA6C006A15F3 /* Main.storyboard */; };
 		158808D51FFDCA6C006A15F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 158808D41FFDCA6C006A15F3 /* Assets.xcassets */; };
 		158808D81FFDCA6C006A15F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158808D61FFDCA6C006A15F3 /* LaunchScreen.storyboard */; };
@@ -41,13 +46,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		151E8BAC1FFDE95F004FEF2C /* BTC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BTC.png; path = ../../../../BTC.png; sourceTree = "<group>"; };
+		151E8BAE1FFDEE41004FEF2C /* tron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tron.png; path = ../../../../tron.png; sourceTree = "<group>"; };
+		151E8BB01FFDEE49004FEF2C /* Stellar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stellar.png; path = ../../../../Stellar.png; sourceTree = "<group>"; };
+		151E8BB21FFDEE55004FEF2C /* ripple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ripple.png; path = ../../../../ripple.png; sourceTree = "<group>"; };
+		151E8BB41FFDEE60004FEF2C /* cardano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardano.png; path = ../../../../cardano.png; sourceTree = "<group>"; };
+		151E8BB61FFDEE63004FEF2C /* LTC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LTC.png; path = ../../../../LTC.png; sourceTree = "<group>"; };
 		156DC5BF1FFDCCAA00EC2534 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = /Users/Francis/Desktop/CryptoWatch/CryptoWatch/CryptoWatch/CryptoWatch/APIClient.swift; sourceTree = "<absolute>"; };
 		156DC5C11FFDCCD700EC2534 /* Cryptocurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptocurrency.swift; sourceTree = "<group>"; };
 		156DC5C31FFDDB2500EC2534 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		156DC5C51FFDDCCE00EC2534 /* Coins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coins.swift; sourceTree = "<group>"; };
 		158808CA1FFDCA6C006A15F3 /* CryptoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		158808CD1FFDCA6C006A15F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		158808CF1FFDCA6C006A15F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		158808D21FFDCA6C006A15F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		158808D41FFDCA6C006A15F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		158808D71FFDCA6C006A15F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -136,9 +146,14 @@
 			isa = PBXGroup;
 			children = (
 				158808CD1FFDCA6C006A15F3 /* AppDelegate.swift */,
-				158808CF1FFDCA6C006A15F3 /* ViewController.swift */,
 				156DC5C51FFDDCCE00EC2534 /* Coins.swift */,
 				156DC5BF1FFDCCAA00EC2534 /* APIClient.swift */,
+				151E8BAC1FFDE95F004FEF2C /* BTC.png */,
+				151E8BB01FFDEE49004FEF2C /* Stellar.png */,
+				151E8BB41FFDEE60004FEF2C /* cardano.png */,
+				151E8BB61FFDEE63004FEF2C /* LTC.png */,
+				151E8BB21FFDEE55004FEF2C /* ripple.png */,
+				151E8BAE1FFDEE41004FEF2C /* tron.png */,
 				156DC5C11FFDCCD700EC2534 /* Cryptocurrency.swift */,
 				158808D11FFDCA6C006A15F3 /* Main.storyboard */,
 				156DC5C31FFDDB2500EC2534 /* Coin.swift */,
@@ -294,8 +309,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				158808D81FFDCA6C006A15F3 /* LaunchScreen.storyboard in Resources */,
+				151E8BB31FFDEE55004FEF2C /* ripple.png in Resources */,
+				151E8BB11FFDEE4A004FEF2C /* Stellar.png in Resources */,
+				151E8BB71FFDEE64004FEF2C /* LTC.png in Resources */,
+				151E8BAF1FFDEE41004FEF2C /* tron.png in Resources */,
 				158808D51FFDCA6C006A15F3 /* Assets.xcassets in Resources */,
 				158808D31FFDCA6C006A15F3 /* Main.storyboard in Resources */,
+				151E8BB51FFDEE60004FEF2C /* cardano.png in Resources */,
+				151E8BAD1FFDE95F004FEF2C /* BTC.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +493,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				158808D01FFDCA6C006A15F3 /* ViewController.swift in Sources */,
 				158808CE1FFDCA6C006A15F3 /* AppDelegate.swift in Sources */,
 				156DC5C61FFDDCCE00EC2534 /* Coins.swift in Sources */,
 				156DC5C01FFDCCAA00EC2534 /* APIClient.swift in Sources */,

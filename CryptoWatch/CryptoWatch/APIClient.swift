@@ -20,7 +20,7 @@ class APIClient {
                 return
             }
             print(jsonString)
-            
+            print("SUCCESS")
             var cryptoArray = [Cryptocurrency]()
             for x in crypto {
                 
@@ -31,8 +31,6 @@ class APIClient {
                     let hourChange = x["percent_change_1h"].string
                   
                 {
-                    
-                    
                     
                     
                     cryptoArray.append(Cryptocurrency(name:  name, price: price, day_percent_change:dayChange,hour_percent_change:hourChange))
