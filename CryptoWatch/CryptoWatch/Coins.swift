@@ -18,6 +18,7 @@ class Coins:UICollectionViewController {
     var cryptos = ["Bitcoin":(#imageLiteral(resourceName: "BTC.png"),0.23),"Ripple":(#imageLiteral(resourceName: "ripple.png"),74),"Cardano":(#imageLiteral(resourceName: "cardano.png"),261.75),"TRON":(#imageLiteral(resourceName: "tron.png"),484.5),"Litecoin":(#imageLiteral(resourceName: "LTC.png"),1.0637),"Stellar":(#imageLiteral(resourceName: "Stellar.png"),0.0)]
     
     override func viewDidLoad() {
+        
         let screenSize = UIScreen.main.bounds
         
         let size = CGSize(width: screenSize.width / 2, height: screenSize.height / 3.5)
@@ -60,19 +61,27 @@ class Coins:UICollectionViewController {
         cell.day.text = x + "%"
         
         
+        
         return cell
         
         
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
+        self.CryptoCurrencies = self.CryptoCurrencies.sorted(by: { $0.price > $1.price })
+
         return CryptoCurrencies.count
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        let appDelegate:AppDelegate = UIApplication.shared.delegate! as! AppDelegate
+        appDelegate.CoinView = self
+        print("FETCHING")
         self.fetchCoins()
-    
+        super.viewWillAppear(animated)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -87,7 +96,9 @@ class Coins:UICollectionViewController {
     
     
     func fetchCoins() {
-        for (x,y) in cryptos {
+        self.CryptoCurrencies = []
+
+        for (x,_) in cryptos {
             APIClient.FetchCurrency(coin:x, onCompletion:   { cryp  in
                 print("api")
                 
@@ -95,9 +106,11 @@ class Coins:UICollectionViewController {
                 self.CryptoCurrencies.append(self.Crypto)
                 print(self.CryptoCurrencies)
                 self.collectionView?.reloadData()
+
             })
             
         }
+
         
     }
 }
