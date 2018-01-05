@@ -15,6 +15,7 @@ class Coin:UICollectionViewCell {
     @IBOutlet var hodl: UILabel!
     @IBOutlet var hour: UILabel!
     @IBOutlet var day: UILabel!
+    @IBOutlet var arrow: UIImageView!
     
     
 }

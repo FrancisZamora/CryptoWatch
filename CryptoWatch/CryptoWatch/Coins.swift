@@ -11,11 +11,11 @@ import UIKit
 class Coins:UICollectionViewController {
     
     @IBOutlet var flow: UICollectionViewFlowLayout!
-    
+    var totalValue = 0.0
     
     var Crypto = Cryptocurrency(name: "" , price: "", day_percent_change: "", hour_percent_change: "")
     var CryptoCurrencies = [Cryptocurrency]()
-    var cryptos = ["Bitcoin":(#imageLiteral(resourceName: "BTC.png"),0.23),"Ripple":(#imageLiteral(resourceName: "ripple.png"),74),"Cardano":(#imageLiteral(resourceName: "cardano.png"),261.75),"TRON":(#imageLiteral(resourceName: "tron.png"),484.5),"Litecoin":(#imageLiteral(resourceName: "LTC.png"),1.0637),"Stellar":(#imageLiteral(resourceName: "Stellar.png"),0.0)]
+    var cryptos = ["Bitcoin":(#imageLiteral(resourceName: "BTC.png"),0.23),"Ripple":(#imageLiteral(resourceName: "ripple.png"),74),"Cardano":(#imageLiteral(resourceName: "cardano.png"),261.75),"TRON":(#imageLiteral(resourceName: "tron.png"),484.5),"Litecoin":(#imageLiteral(resourceName: "LTC.png"),1.0637),"Stellar":(#imageLiteral(resourceName: "Stellar.png"),289.71), "IOTA":(#imageLiteral(resourceName: "IOTA.png"),96.90), "Ethereum":(#imageLiteral(resourceName: "ethereum.png"),0.17)]
     
     override func viewDidLoad() {
         
@@ -41,9 +41,11 @@ class Coins:UICollectionViewController {
         let y = CryptoCurrencies[indexPath.row].hour_percent_change
         if x[x.startIndex] == "-" {
             cell.day.textColor = UIColor.red
+            cell.arrow.image = #imageLiteral(resourceName: "Down")
         }
         else {
             cell.day.textColor = UIColor.green
+            cell.arrow.image = #imageLiteral(resourceName: "Up")
         }
         if y[x.startIndex] == "-" {
             cell.hour.textColor = UIColor.red
@@ -56,6 +58,8 @@ class Coins:UICollectionViewController {
         let currentPrice = Double(CryptoCurrencies[indexPath.row].price)!
         
         cell.hodl.text = "$" + String(cryptos[name]!.1 * currentPrice)
+ 
+
         cell.CoinPic.image = cryptos[name]?.0
         cell.hour.text = y + "%"
         cell.day.text = x + "%"
@@ -85,6 +89,7 @@ class Coins:UICollectionViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
+        self.totalValue = 0.0
         self.CryptoCurrencies = []
         
     }
@@ -105,7 +110,11 @@ class Coins:UICollectionViewController {
                 self.Crypto = cryp[0]
                 self.CryptoCurrencies.append(self.Crypto)
                 print(self.CryptoCurrencies)
+                self.totalValue = self.totalValue +  Double(self.Crypto.price)! * (self.cryptos[self.Crypto.name]?.1)!
+                print(self.totalValue)
+                self.navigationItem.title = "$" + String(self.totalValue)
                 self.collectionView?.reloadData()
+                
 
             })
             

@@ -13,6 +13,11 @@
 		151E8BB31FFDEE55004FEF2C /* ripple.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BB21FFDEE55004FEF2C /* ripple.png */; };
 		151E8BB51FFDEE60004FEF2C /* cardano.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BB41FFDEE60004FEF2C /* cardano.png */; };
 		151E8BB71FFDEE64004FEF2C /* LTC.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BB61FFDEE63004FEF2C /* LTC.png */; };
+		151E8BB91FFEEE87004FEF2C /* IOTA.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BB81FFEEE87004FEF2C /* IOTA.png */; };
+		151E8BBB1FFEEE8F004FEF2C /* ripple.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BBA1FFEEE8F004FEF2C /* ripple.png */; };
+		151E8BBD1FFEEE98004FEF2C /* Sub.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BBC1FFEEE98004FEF2C /* Sub.png */; };
+		151E8BBF1FFEEFB1004FEF2C /* iota.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BBE1FFEEFB1004FEF2C /* iota.png */; };
+		151E8BC11FFEEFF3004FEF2C /* ethereum.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BC01FFEEFF2004FEF2C /* ethereum.png */; };
 		156DC5C01FFDCCAA00EC2534 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156DC5BF1FFDCCAA00EC2534 /* APIClient.swift */; };
 		156DC5C21FFDCCD700EC2534 /* Cryptocurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156DC5C11FFDCCD700EC2534 /* Cryptocurrency.swift */; };
 		156DC5C41FFDDB2500EC2534 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156DC5C31FFDDB2500EC2534 /* Coin.swift */; };
@@ -52,6 +57,11 @@
 		151E8BB21FFDEE55004FEF2C /* ripple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ripple.png; path = ../../../../ripple.png; sourceTree = "<group>"; };
 		151E8BB41FFDEE60004FEF2C /* cardano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardano.png; path = ../../../../cardano.png; sourceTree = "<group>"; };
 		151E8BB61FFDEE63004FEF2C /* LTC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LTC.png; path = ../../../../LTC.png; sourceTree = "<group>"; };
+		151E8BB81FFEEE87004FEF2C /* IOTA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IOTA.png; path = ../../../../IOTA.png; sourceTree = "<group>"; };
+		151E8BBA1FFEEE8F004FEF2C /* ripple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ripple.png; path = ../../../../ripple.png; sourceTree = "<group>"; };
+		151E8BBC1FFEEE98004FEF2C /* Sub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sub.png; path = ../../../../Sub.png; sourceTree = "<group>"; };
+		151E8BBE1FFEEFB1004FEF2C /* iota.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iota.png; path = ../../../../iota.png; sourceTree = "<group>"; };
+		151E8BC01FFEEFF2004FEF2C /* ethereum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ethereum.png; path = ../../../../ethereum.png; sourceTree = "<group>"; };
 		156DC5BF1FFDCCAA00EC2534 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIClient.swift; path = /Users/Francis/Desktop/CryptoWatch/CryptoWatch/CryptoWatch/CryptoWatch/APIClient.swift; sourceTree = "<absolute>"; };
 		156DC5C11FFDCCD700EC2534 /* Cryptocurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptocurrency.swift; sourceTree = "<group>"; };
 		156DC5C31FFDDB2500EC2534 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
@@ -148,7 +158,12 @@
 				158808CD1FFDCA6C006A15F3 /* AppDelegate.swift */,
 				156DC5C51FFDDCCE00EC2534 /* Coins.swift */,
 				156DC5BF1FFDCCAA00EC2534 /* APIClient.swift */,
+				151E8BBA1FFEEE8F004FEF2C /* ripple.png */,
+				151E8BBC1FFEEE98004FEF2C /* Sub.png */,
 				151E8BAC1FFDE95F004FEF2C /* BTC.png */,
+				151E8BB81FFEEE87004FEF2C /* IOTA.png */,
+				151E8BC01FFEEFF2004FEF2C /* ethereum.png */,
+				151E8BBE1FFEEFB1004FEF2C /* iota.png */,
 				151E8BB01FFDEE49004FEF2C /* Stellar.png */,
 				151E8BB41FFDEE60004FEF2C /* cardano.png */,
 				151E8BB61FFDEE63004FEF2C /* LTC.png */,
@@ -308,14 +323,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				151E8BBD1FFEEE98004FEF2C /* Sub.png in Resources */,
 				158808D81FFDCA6C006A15F3 /* LaunchScreen.storyboard in Resources */,
 				151E8BB31FFDEE55004FEF2C /* ripple.png in Resources */,
+				151E8BB91FFEEE87004FEF2C /* IOTA.png in Resources */,
 				151E8BB11FFDEE4A004FEF2C /* Stellar.png in Resources */,
 				151E8BB71FFDEE64004FEF2C /* LTC.png in Resources */,
 				151E8BAF1FFDEE41004FEF2C /* tron.png in Resources */,
 				158808D51FFDCA6C006A15F3 /* Assets.xcassets in Resources */,
 				158808D31FFDCA6C006A15F3 /* Main.storyboard in Resources */,
 				151E8BB51FFDEE60004FEF2C /* cardano.png in Resources */,
+				151E8BC11FFEEFF3004FEF2C /* ethereum.png in Resources */,
+				151E8BBF1FFEEFB1004FEF2C /* iota.png in Resources */,
+				151E8BBB1FFEEE8F004FEF2C /* ripple.png in Resources */,
 				151E8BAD1FFDE95F004FEF2C /* BTC.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
