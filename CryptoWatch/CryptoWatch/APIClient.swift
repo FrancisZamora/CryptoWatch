@@ -16,7 +16,7 @@ class APIClient {
             guard let jsonString = response.result.value,  let crypto = JSON(jsonString).array   else {
                 onCompletion([])
                 
-                print("API DIDNT WORK")
+                print("ERROR with Coinmarket API")
                 return
             }
             print(jsonString)

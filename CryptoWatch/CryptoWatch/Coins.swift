@@ -15,7 +15,7 @@ class Coins:UICollectionViewController {
     
     var Crypto = Cryptocurrency(name: "" , price: "", day_percent_change: "", hour_percent_change: "")
     var CryptoCurrencies = [Cryptocurrency]()
-    var cryptos = ["Bitcoin":(#imageLiteral(resourceName: "BTC.png"),0.23),"Ripple":(#imageLiteral(resourceName: "ripple.png"),74),"Cardano":(#imageLiteral(resourceName: "cardano.png"),261.75),"TRON":(#imageLiteral(resourceName: "tron.png"),484.5),"Litecoin":(#imageLiteral(resourceName: "LTC.png"),1.0637),"Stellar":(#imageLiteral(resourceName: "Stellar.png"),289.71), "IOTA":(#imageLiteral(resourceName: "IOTA.png"),96.90), "Ethereum":(#imageLiteral(resourceName: "ethereum.png"),0.17)]
+    var cryptos = ["Bitcoin":(#imageLiteral(resourceName: "BTC.png"),0.23),"Ripple":(#imageLiteral(resourceName: "ripple.png"),74),"Cardano":(#imageLiteral(resourceName: "cardano.png"),261.75),"TRON":(#imageLiteral(resourceName: "tron.png"),484.5),"Litecoin":(#imageLiteral(resourceName: "LTC.png"),1.0637),"Stellar":(#imageLiteral(resourceName: "Stellar.png"),289.71), "IOTA":(#imageLiteral(resourceName: "IOTA.png"),96.90), "Substratum":(#imageLiteral(resourceName: "Sub.png"),229.77), "Siacoin":(#imageLiteral(resourceName: "Sia.png"),1757.46)]
     
     override func viewDidLoad() {
         
@@ -53,13 +53,12 @@ class Coins:UICollectionViewController {
         else {
             cell.hour.textColor = UIColor.green
         }
+        
         let name = CryptoCurrencies[indexPath.row].name
-        cell.price.text = "$" + CryptoCurrencies[indexPath.row].price
         let currentPrice = Double(CryptoCurrencies[indexPath.row].price)!
         
+        cell.price.text = "$" + CryptoCurrencies[indexPath.row].price
         cell.hodl.text = "$" + String(cryptos[name]!.1 * currentPrice)
- 
-
         cell.CoinPic.image = cryptos[name]?.0
         cell.hour.text = y + "%"
         cell.day.text = x + "%"
@@ -105,7 +104,6 @@ class Coins:UICollectionViewController {
 
         for (x,_) in cryptos {
             APIClient.FetchCurrency(coin:x, onCompletion:   { cryp  in
-                print("api")
                 
                 self.Crypto = cryp[0]
                 self.CryptoCurrencies.append(self.Crypto)

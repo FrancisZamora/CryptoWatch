@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151856F920018EA400E7A96F /* Sia.png in Resources */ = {isa = PBXBuildFile; fileRef = 151856F820018EA400E7A96F /* Sia.png */; };
 		151E8BAD1FFDE95F004FEF2C /* BTC.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BAC1FFDE95F004FEF2C /* BTC.png */; };
 		151E8BAF1FFDEE41004FEF2C /* tron.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BAE1FFDEE41004FEF2C /* tron.png */; };
 		151E8BB11FFDEE4A004FEF2C /* Stellar.png in Resources */ = {isa = PBXBuildFile; fileRef = 151E8BB01FFDEE49004FEF2C /* Stellar.png */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		151856F820018EA400E7A96F /* Sia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sia.png; path = ../../../../Sia.png; sourceTree = "<group>"; };
 		151E8BAC1FFDE95F004FEF2C /* BTC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BTC.png; path = ../../../../BTC.png; sourceTree = "<group>"; };
 		151E8BAE1FFDEE41004FEF2C /* tron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tron.png; path = ../../../../tron.png; sourceTree = "<group>"; };
 		151E8BB01FFDEE49004FEF2C /* Stellar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stellar.png; path = ../../../../Stellar.png; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				156DC5BF1FFDCCAA00EC2534 /* APIClient.swift */,
 				151E8BBA1FFEEE8F004FEF2C /* ripple.png */,
 				151E8BBC1FFEEE98004FEF2C /* Sub.png */,
+				151856F820018EA400E7A96F /* Sia.png */,
 				151E8BAC1FFDE95F004FEF2C /* BTC.png */,
 				151E8BB81FFEEE87004FEF2C /* IOTA.png */,
 				151E8BC01FFEEFF2004FEF2C /* ethereum.png */,
@@ -335,6 +338,7 @@
 				151E8BB51FFDEE60004FEF2C /* cardano.png in Resources */,
 				151E8BC11FFEEFF3004FEF2C /* ethereum.png in Resources */,
 				151E8BBF1FFEEFB1004FEF2C /* iota.png in Resources */,
+				151856F920018EA400E7A96F /* Sia.png in Resources */,
 				151E8BBB1FFEEE8F004FEF2C /* ripple.png in Resources */,
 				151E8BAD1FFDE95F004FEF2C /* BTC.png in Resources */,
 			);
