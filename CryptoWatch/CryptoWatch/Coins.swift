@@ -35,7 +35,9 @@ class Coins:UICollectionViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        let formatter = NumberFormatter()
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 2
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Coin", for: indexPath) as! Coin
         let x = CryptoCurrencies[indexPath.row].day_percent_change
         let y = CryptoCurrencies[indexPath.row].hour_percent_change
@@ -58,7 +60,7 @@ class Coins:UICollectionViewController {
         let currentPrice = Double(CryptoCurrencies[indexPath.row].price)!
         
         cell.price.text = "$" + CryptoCurrencies[indexPath.row].price
-        cell.hodl.text = "$" + String(cryptos[name]!.1 * currentPrice)
+        cell.hodl.text = "$" + (formatter.string(from: (cryptos[name]!.1 * currentPrice) as NSNumber) ?? "n/a")
         cell.CoinPic.image = cryptos[name]?.0
         cell.hour.text = y + "%"
         cell.day.text = x + "%"
@@ -101,16 +103,23 @@ class Coins:UICollectionViewController {
     
     func fetchCoins() {
         self.CryptoCurrencies = []
-
+    
         for (x,_) in cryptos {
             APIClient.FetchCurrency(coin:x, onCompletion:   { cryp  in
-                
+                let formatter = NumberFormatter()
+                formatter.minimumFractionDigits = 0
+                formatter.maximumFractionDigits = 2
                 self.Crypto = cryp[0]
                 self.CryptoCurrencies.append(self.Crypto)
                 print(self.CryptoCurrencies)
                 self.totalValue = self.totalValue +  Double(self.Crypto.price)! * (self.cryptos[self.Crypto.name]?.1)!
                 print(self.totalValue)
                 self.navigationItem.title = "$" + String(self.totalValue)
+              
+                
+                
+                self.navigationItem.title = "$" +  (formatter.string(from: self.totalValue as NSNumber) ?? "n/a")
+            
                 self.collectionView?.reloadData()
                 
 
